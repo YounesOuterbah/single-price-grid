@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+  background-color: #eee;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  border-radius: 12px;
+  width: 600px;
+  overflow: hidden;
+}
+
+.container .top-box {
+  padding: 20px;
+  background-color: white;
+}
+
+.top-box h2 {
+  color: hsl(179, 62%, 43%);
+}
+
+.top-box h3 {
+  color: hsl(71, 73%, 54%);
+}
+
+.top-box p {
+  font-size: 16px;
+  color: hsl(218, 22%, 67%);
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+.container .bottom-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bottom-box .box-one {
+  background-color: hsl(179, 62%, 43%);
+  padding: 30px;
+}
+
+.bottom-box .box-two {
+  background-color: hsl(179, 62%, 55%);
+  padding: 30px;
+}
+
+.title {
+  font-size: 20px;
+  color: hsl(204, 43%, 93%);
+}
+
+.holder {
+  display: flex;
+  align-items: flex-start;
+}
+
+.box-one .amount {
+  font-size: 32px;
+  font-weight: 700;
+  color: hsl(204, 43%, 93%);
+  margin-top: -5px;
+  margin-right: 10px;
+}
+
+.box-one span {
+  color: hsl(204, 43%, 80%);
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.box-one p {
+  margin-top: -20px;
+  color: hsl(204, 43%, 93%);
+}
+
+.box-one button {
+  color: hsl(204, 43%, 93%);
+  background-color: hsl(71, 73%, 54%);
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  margin-top: 27px;
+  font-weight: 700;
+  box-shadow: 0px 1px 3px 0px black;
+  cursor: pointer;
+}
+
+.box-two p {
+  font-size: 15px;
+  line-height: 1.4;
+  color: hsl(204, 43%, 87%);
+  text-align: left;
+}
+
+@media (max-width:767px){
+  .container {
+    width: 300px;
+  }
+  .container .bottom-box {
+    display: flex;
+    flex-direction: column;
+  }
+}
